@@ -1,0 +1,59 @@
+//VARIABLES
+//colors
+$navTextClr: #e65c43 //orange
+$bodyTextClr: #000 //black
+$accentClr1: #fff //white
+$accentClr2: #666 //grey
+$accentClr3: #30353d //dkgrey
+$accentClr4: #f5f6f6 //ltgrey
+
+
+//fonts
+$mainFont: 'Roboto', sans-serif
+$mainFontSize: 1em
+$mainFontLineH: 2em
+
+//imgs
+$bgImg: url('../images/bg.gif') #fff repeat-x
+$figureImg: url('../images/logo.png') no-repeat 0 50px
+$socialmedia1: url('../images/social-media.png') 0 0
+$socialmedia2: url('../images/social-media.png') -38px 0
+$socialmedia3: url('../images/social-media.png') -76px 0
+$socialmedia4: url('../images/social-media.png') -114px 0
+
+//MIXINS
+//main font stack
+@mixin mainFontStack
+    font-family: $mainFont
+    font-size: $mainFontSize
+    line-height: $mainFontLineH
+
+//font elements
+@mixin fontElements($color, $letterspace, $textdec, $align, $weight, $size, $lineheight, $textindent)
+    color: $color
+    letter-spacing: $letterspace
+    text-decoration: $textdec
+    text-align: $align
+    font-weight: $weight
+    font-size: $size
+    line-height: $lineheight
+    text-indent: $textindent
+
+//body format
+@mixin bodyFormat($width, $maxwidth, $height, $margin, $padding, $float, $align)
+    width: $width
+    max-width: $maxwidth
+    height: $height
+    margin: $margin
+    padding: $padding
+    float: $float
+    text-align: $align
+
+//misc elements
+@mixin elements($liststyle, $margin, $padding, $display, $clear, $background)
+    list-style: $liststyle
+    margin: $margin
+    padding: $padding
+    display: $display
+    clear: $clear
+    background: $background

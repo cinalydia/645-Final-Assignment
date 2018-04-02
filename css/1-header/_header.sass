@@ -1,0 +1,32 @@
+body
+    @include mainFontStack
+    background: $bgImg
+main
+    @include bodyFormat(940px, null, null, 0 auto, 0 10px, null, null)
+figure
+    @include bodyFormat(400px, null, 190px, null, null, left, null)
+    background: $figureImg      
+nav
+    @include bodyFormat(540px, null, 190px, null, null, left, right)
+    ul
+        @include elements(none, 95px 0 0 0, null, null, null, null)
+    ul li
+        @include elements(null, 0 10px 0 0, null, inline, null, null)
+        font-size: 0.8em
+    ul li a
+        @include fontElements($navTextClr, -0.1em, none, null, null, null, null, null)
+        &:hover
+            color: $accentClr1
+header
+    @include bodyFormat(inherit, null, null, null, 40px 0 0 0, null, center)
+    clear: both  
+    img
+        @include bodyFormat(null, 100%, auto, null, null, null, null)
+    h1
+        @include fontElements($navTextClr, null, null, null, 100, 4em, 0, null)
+    h2
+        @include fontElements($accentClr1, null, null, null, 900, 2.5em, 0, null)
+        margin-bottom: 70px
+    h3
+        @include fontElements($accentClr2, null, null, null, 400, 2em, 0, null)
+        margin-bottom: 50px
